@@ -18,12 +18,13 @@ namespace Plugin4U.SayAs
 
         protected override void Load()
         {
-            WebClient clt = new WebClient();
+            //WebClient clt = new WebClient();
             Instance = this;
             base.Load();
             Logger.Log("[Plugin4U] SayAs Loaded!");
-            string a = clt.DownloadString("http://Plugin4U.cf/SayAs_Version.txt");
-            if(!(a == "1.0.0.0")) { Logger.LogWarning("Update! NEW VERSION : " + a); }
+            Logger.Log("Updated By DannyGaming1216!");
+            //string a = clt.DownloadString("http://Plugin4U.cf/SayAs_Version.txt");
+            //if(!(a == "1.0.0.0")) { Logger.LogWarning("Update! NEW VERSION : " + a); }
         }
 
 
